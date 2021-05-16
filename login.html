@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Api Post</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>How to send a post request using fetch</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <form id="loginform">
+            <fieldset>
+              <label for="nameField">Email</label>
+              <input
+                name="email"
+                type="text"
+                placeholder="Enter Email"
+                id="nameField"
+              />
+              <label for="commentField">Password</label>
+              <textarea
+                placeholder="Enter Password"
+                name="password"
+                id="commentField"
+              ></textarea>
+            </fieldset>
+            <button class="button-primary" type="submit" >login</button>
+          </form>
+        </div>
+      </div>
+      <div>
+          <a href="Signup.html">Don't have an account? signup</a>
+      </div>
+    </div>
+    <script type="module" src="login.js">
+    </script>
+  </body>
+</html>
