@@ -220,7 +220,7 @@ button {
 }
 
 .start-btn span {
-  color: #f2f7f3;
+  color: #050505;
 }
 
 .stop-btn:hover {
@@ -229,7 +229,7 @@ button {
 }
 
 .stop-btn span {
-  color: #f3faf4;
+  color: #050505;
 }
 
 @media screen and (max-width: 780px) {
