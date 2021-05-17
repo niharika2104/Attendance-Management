@@ -4,8 +4,8 @@ const startSession =
   "https://rbds-attendance.herokuapp.com/attendance/startSession";
 const endSession =
   "https://rbds-attendance.herokuapp.com/attendance/endSession";
-const formEl2 = document.getElementById("startcard");
-const formEl3 = document.getElementById("stopcard");
+//const formEl2 = document.getElementById("startcard");
+//const formEl3 = document.getElementById("stopcard");
 const currentSessoionActive = false;
 let json;
 let tokenstorage;
@@ -66,6 +66,8 @@ const stopSessionFn = async () => {
   console.log(res);
   if (res.status == 200) {
     console.log("session ended");
+    $("#sessionEndBtn").addClass("hide");
+    $("#sessionStartBtn").removeClass("hide");
   }
 };
 
