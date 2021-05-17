@@ -15,14 +15,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
     />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attendance-Management</title>
     <style>
-      h1 {
-        text-align: center;
-      }
+      .row {
+  height: 500px;
+  position: relative;
+}
+.column {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
     </style>
   </head>
   <body>
@@ -38,21 +67,22 @@
                 id="nameField"
               />
               <label for="commentField">Password</label>
-              <textarea
+              <input
                 placeholder="Enter Password"
+                type="password"
                 name="password"
                 id="commentField"
-              ></textarea>
+              />
             </fieldset>
             <button class="button-primary" type="submit" >login</button>
+            <div>
+              <a href="Signup.html">Don't have an account? signup</a>
+            </div>
           </form>
         </div>
       </div>
-      <div>
-          <a href="Signup.html">Don't have an account? signup</a>
-      </div>
     </div>
-    <script type="module" src="login.js">
+    <script  src="login.js">
     </script>
   </body>
 </html>

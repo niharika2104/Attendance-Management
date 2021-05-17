@@ -16,8 +16,9 @@ formEl.addEventListener("submit", async (e) => {
     });
     const json = await response.json();
     console.log(json);
-    if (json.message == "user created") {
-      return window.location.replace("login.html");
+    if (json.message == "User created") {
+      alert("User created");
+      window.location.replace("login.html");
     } else {
       alert("user already exists");
     }
