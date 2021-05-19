@@ -164,36 +164,9 @@ button {
   width: 50%;
   float: left;
   left: 13%;
-  top: 5%;
+  top: 40px;
   height: 100px;
   position: relative;
-}
-
-.container1 {
-  width: 50%;
-  float: top;
-  margin-top: 5%;
-  text-align: center;
-  left: 8%;
-  height: 20px;
-  position: relative;
-}
-
-.container2 h2 {
-  width: 120%;
-  margin-top: 380px;
-  margin-left: 400px;
-  color: #1c4374;
-}
-
-.center1 {
-  float: right;
-  margin: 0;
-  position: absolute;
-  top: 20%;
-  left: 70%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .container2 {
@@ -211,7 +184,15 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.container2 h2 {
+  width: 120%;
+  margin-top: 380px;
+  margin-left: 400px;
+  color: #1c4374;
+}
+
 .start-btn {
+  margin-top: 40px;
   margin-left: 500px;
 }
 .start-btn:hover {
@@ -225,6 +206,7 @@ button {
 }
 
 .stop-btn {
+  margin-top: 40px;
   margin-left: 500px;
 }
 
@@ -270,12 +252,13 @@ button {
 
   .container2 h2 {
     width: 70%;
-    margin-top: 800px;
+    margin-top: 890px;
     margin-left: 230px;
     color: #1c4374;
   }
 
   .container2 button {
+    margin-top: 10px;
     margin-left: 230px;
   }
 
