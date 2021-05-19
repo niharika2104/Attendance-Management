@@ -306,8 +306,24 @@ button {
   }
 
   .mobile_nav_items {
-    background: #2f323a;
-    display: none;
+    z-index: 3;
+    top: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(12, 58, 113, 1) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
   }
 
   .mobile_nav_items a {
