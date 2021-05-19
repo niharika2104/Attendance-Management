@@ -38,7 +38,7 @@ header {
 }
 
 .sidebar {
-  z-index: 1;
+  z-index: 3;
   top: 0;
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -91,11 +91,11 @@ label #sidebar_btn {
 }
 
 label #sidebar_btn:hover {
-  color: #3a8d5a;
+  color: #080808;
 }
 
 #check:checked ~ .sidebar {
-  left: -185px;
+  left: -190px;
 }
 
 #check:checked ~ .sidebar a span {
@@ -104,8 +104,8 @@ label #sidebar_btn:hover {
 
 #check:checked ~ .sidebar a {
   font-size: 20px;
-  margin-left: 165px;
-  width: 100%;
+  margin-left: 170px;
+  width: 80%;
 }
 
 .content {
@@ -163,7 +163,7 @@ button {
 .container0 {
   width: 50%;
   float: left;
-  left: 13%;
+  left: 15%;
   top: 40px;
   height: 100px;
   position: relative;
@@ -302,7 +302,7 @@ button {
   }
 
   .nav_bar .nav_btn:hover {
-    color: #479264;
+    color: #20386b;
   }
 
   .mobile_nav_items {
@@ -323,11 +323,11 @@ button {
   }
 
   .mobile_nav_items a:hover {
-    background: #2c9e4e;
+    background: #2f4a7c;
   }
 
   .mobile_nav_items i {
-    padding-right: 10px;
+    padding-right: 30px;
   }
 
   .active {
