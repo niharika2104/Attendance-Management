@@ -4,39 +4,34 @@ const startSession =
   "https://rbds-attendance.herokuapp.com/attendance/startSession";
 const endSession =
   "https://rbds-attendance.herokuapp.com/attendance/endSession";
-//const formEl2 = document.getElementById("startcard");
-//const formEl3 = document.getElementById("stopcard");
-const currentSessoionActive = false;
+
 let json;
 let tokenstorage;
 
-if (formEl1) {
-  formEl1.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    var formData = new FormData(formEl1);
-    var formDataSerialized = Object.fromEntries(formData);
-    console.log(formDataSerialized);
-    try {
-      var response = await fetch(login, {
-        method: "POST",
-        body: JSON.stringify(formDataSerialized),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      json = await response.json();
-      console.log(json);
-      sessionStorage.setItem("token", json.token);
+const Login = async () => {
+  var formData = new FormData(formEl1);
+  var formDataSerialized = Object.fromEntries(formData);
+  console.log(formDataSerialized);
+  try {
+    var response = await fetch(login, {
+      method: "POST",
+      body: JSON.stringify(formDataSerialized),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    json = await response.json();
+    console.log(json);
+    sessionStorage.setItem("token", json.token);
 
-      if (json.message == "Auth successful") {
-        myFunc();
-      }
-    } catch (e) {
-      console.error(e);
-      alert("there as an error");
+    if (json.message == "Auth successful") {
+      myFunc();
     }
-  });
-}
+  } catch (e) {
+    console.error(e);
+    alert("there as an error");
+  }
+};
 
 const startSessionFn = async () => {
   tokenstorage = sessionStorage.getItem("token");
@@ -69,6 +64,12 @@ const stopSessionFn = async () => {
     $("#sessionEndBtn").addClass("hide");
     $("#sessionStartBtn").removeClass("hide");
   }
+};
+
+const logout = async () => {
+  sessionStorage.removeItem("token");
+  console.log(sessionStorage.getItem("token"));
+  window.location.replace("login.html");
 };
 
 function myFunc() {
